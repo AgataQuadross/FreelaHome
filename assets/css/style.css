@@ -6,3 +6,19 @@
     --branco: #FFFFFF;
 }
 
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--Gelo);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header {
+    background-color: var(--Roxo);
+    height: 70px;
+    width: 100%;
+}
