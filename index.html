@@ -6,25 +6,33 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login</title>
     <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/login.css">
 
 </head>
 
 <body>
     <main>
-        <form action="POST">
+        <form action="POST" class="formulario">
             <h2>Login</h2>
-            <img src="assets/img/FotoDePerfil.png" alt="">
-            <label for="nome">Nome Completo</label>
-            <input type="text" id="nome">
-            <label for="email-cpf">Email/CPF</label>
-            <input type="email" id="email-cpf">
-            <label for="senha">Senha</label>
-            <input type="password" id="senha">
+            <div class="container-avatar">
+                <img class="avatar" src="assets/img/FotoDePerfil.png" alt="">
+            </div>
 
-            <button id="cancelar">Cancelar</button>
-            <button id="entrar"><a href="principal.html">Entrar</a></button>
-            <a href="cadastro.html">Criar conta</a>
-            <a href="">Esqueci a senha</a>
+            <div>
+                <input type="text" id="nome" placeholder="Nome Completo" required>
+                <input type="email" id="email-cpf" placeholder="Email/CPF" required>
+                <input type="password" id="senha" placeholder="Senha" required>
+            </div>
+
+            <div class="botoes">
+                <button class="btn-cancelar" id="cancelar">Cancelar</button>
+                <button class="btn-entrar" id="entrar"><a href="principal.html">Entrar</a></button>
+            </div>
+
+            <div class="links">
+                <a href="cadastro.html">Criar conta</a>
+                <a href="">Esqueci a senha</a>
+            </div>
         </form>
     </main>
 </body>

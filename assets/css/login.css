@@ -1,0 +1,154 @@
+:root {
+    --Roxo: #72577C;
+    --Roxo-transparencia: #72577cc2;
+    --Roxo-Cinzento: #8E8CA3;
+    --Azul-marinho-Acinzentado: #A9C2C9;
+    --Gelo: #E4E4E4;
+    --Branco: #FFFFFF;
+    --Vermelho: #ff0000;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+/* Caixa principal */
+.formulario {
+    background-color: var(--Roxo-Cinzento);
+    width: 320px;
+    padding: 30px 25px;
+    box-sizing: border-box;
+    border-radius: 5px;
+}
+
+
+/* Titulo Login */
+h2 {
+    color: var(--Branco);
+    text-align: center;
+    font-size: 28px;
+    font-weight: normal;
+    margin-top: 0;
+    margin-bottom: 15px;
+}
+
+
+/* Circulo do icone de perfil */
+
+.container-avatar {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 25px;
+}
+
+.avatar {
+    object-fit: cover;
+    width: 60px;
+    height: 60px;
+    border: none;
+    border-radius: 50%;
+    background-color: var(--Azul-marinho-Acinzentado);
+    box-shadow: 5px 5px 5px #3533338a;
+}
+
+
+/* Campos de entrada */
+input {
+    width: 100%;
+    padding: 10px 12px;
+    margin-bottom: 15px;
+    margin-top: 20px;
+    background-color: var(--Roxo-transparencia);
+    color: var(--Branco);
+    border: none;
+    border-radius: 5px;
+    outline: none;
+    box-sizing: border-box;
+    font-size: 14px;
+}
+
+input::placeholder {
+    color: var(--Branco);
+}
+
+input:hover,
+input:focus {
+    background-color: var(--Roxo);
+}
+
+
+
+/* Alinhamento dos botoes */
+.botoes {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+
+/* Botao Cancelar */
+.btn-cancelar {
+    flex: 1;
+    padding: 8px 0;
+    background-color: transparent;
+    color: var(--Branco);
+    border: 1px solid var(--Azul-marinho-Acinzentado);
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 18px;
+}
+
+.btn-cancelar:hover {
+    border: 1px solid var(--Vermelho);
+    box-shadow: 3px 3px 5px #3533338a;
+    transition: all 0.2s ease-in-out;
+}
+
+
+/* Botao Entrar */
+.btn-entrar {
+    flex: 1;
+    padding: 8px 0;
+    background-color: var(--Azul-marinho-Acinzentado);
+    color: var(--Branco);
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 18px;
+}
+
+.btn-entrar a {
+    display: block;
+    color: var(--Branco);
+    text-decoration: none;
+}
+
+.btn-entrar:hover {
+    box-shadow: 3px 3px 5px #3533338a;
+    transition: all 0.2s ease-in-out;
+}
+
+
+/* Links */
+.links {
+    text-align: center;
+}
+
+.links a {
+    display: block;
+    color: var(--Gelo);
+    text-decoration: none;
+    margin-top: 6px;
+    font-size: 18px;
+}
+
+.links a:hover {
+    color: var(--Branco);
+    text-decoration: underline;
+}
