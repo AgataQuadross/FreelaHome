@@ -28,6 +28,7 @@ main {
     border-radius: 5px;
 }
 
+
 /* Campos de entrada */
 input {
     width: 100%;
@@ -46,6 +47,11 @@ input:hover,
 input:focus {
     background-color: var(--Roxo);
 }
+/* 
+input::checkmark {
+    border: 1px solid var(--Roxo);
+} */
+
 
 /* Alinhamento dos botoes */
 .botoes {
@@ -96,3 +102,6 @@ input:focus {
     box-shadow: 3px 3px 5px #3533338a;
     transition: all 0.2s ease-in-out;
 }
+
+
+/*  */
