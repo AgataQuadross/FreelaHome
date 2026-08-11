@@ -8,18 +8,24 @@
     --Vermelho: #ff0000;
 }
 
-main {
-    margin: 20px;
-    width: 50%;
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
-/* Titulo */
-h2 {
-    text-align: center;
-    font-size: 28px;
-    font-weight: normal;
-    margin-top: 0;
-    margin-bottom: 15px;
+main {
+    min-height: 100vh;
+    margin: 20px;
+    width: 40%;
+}
+
+
+/* Caixa principal */
+.formulario {
+    box-sizing: border-box;
+    border-radius: 5px;
 }
 
 /* Campos de entrada */
@@ -27,7 +33,6 @@ input {
     width: 100%;
     padding: 10px 12px;
     margin-bottom: 15px;
-    margin-top: 20px;
     background-color: var(--Roxo-transparencia);
     color: var(--Branco);
     border: none;
@@ -45,7 +50,8 @@ input:focus {
 /* Alinhamento dos botoes */
 .botoes {
     display: flex;
-    justify-content: space-between;
+    text-align: center;
+    width: 200px;
     gap: 10px;
     margin-top: 10px;
     margin-bottom: 20px;
@@ -62,6 +68,7 @@ input:focus {
     border-radius: 20px;
     cursor: pointer;
     font-size: 18px;
+    text-decoration: none;
 }
 
 .btn-cancelar:hover {
@@ -69,6 +76,7 @@ input:focus {
     box-shadow: 3px 3px 5px #3533338a;
     transition: all 0.2s ease-in-out;
 }
+
 
 
 /* Botao Entrar */
@@ -81,11 +89,6 @@ input:focus {
     border-radius: 20px;
     cursor: pointer;
     font-size: 18px;
-}
-
-.btn-entrar a {
-    display: block;
-    color: var(--Branco);
     text-decoration: none;
 }
 

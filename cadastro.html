@@ -12,8 +12,7 @@
 
 <body>
     <main>
-        <h2>Cadastro</h2>
-        <form action="POST">
+        <form action="POST" class="formulario">
 
             <label for="nome">Nome completo</label>
             <input type="text" id="nome" name="nome" required>
@@ -45,9 +44,9 @@
             <label for="termos">Aceito os Termos de Uso</label>
             <input type="checkbox" id="termos" name="termos" required>
 
-            <div>
-                <a href="index.html">Cancelar</a>
-                <button type="submit" id="cadastrar">Cadastrar</button>
+            <div class="botoes">
+                <a class="btn-cancelar" href="index.html">Cancelar</a>
+                <a class="btn-entrar" id="cadastrar">Cadastrar</button>
             </div>
 
         </form>

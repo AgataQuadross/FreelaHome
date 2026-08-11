@@ -102,6 +102,8 @@ input:focus {
     border-radius: 20px;
     cursor: pointer;
     font-size: 18px;
+    text-align: center;
+    text-decoration: none;
 }
 
 .btn-cancelar:hover {
@@ -121,11 +123,7 @@ input:focus {
     border-radius: 20px;
     cursor: pointer;
     font-size: 18px;
-}
-
-.btn-entrar a {
-    display: block;
-    color: var(--Branco);
+    text-align: center;
     text-decoration: none;
 }
 
