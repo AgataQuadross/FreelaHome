@@ -1,24 +1,88 @@
-.grid-servicos {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr); /* 3 colunas */
-    gap: 10px;
-    padding: 0 20px;
-    max-width: 400px;
-    margin: 0 auto;
+:root {
+    --Roxo: #72577C;
+    --Roxo-Cinzento: #8E8CA3;
+    --Azul-marinho-Acinzentado: #A9C2C9;
+    --Azul-marinho-escuro: #90b2b8;
+    --Gelo: #E4E4E4;
+    --Branco: #FFFFFF;
+    --Trasnparencia: #0707077c;
 }
 
-.botao-servico {
-    background-color: #928ba4;
-    border: 1px solid #777;
-    border-radius: 5px;
-    height: 80px;
+/* Cabeçalho */
+
+header {
     display: flex;
-    align-items: center;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-inline: 15px;
+}
+
+nav a{
+    text-decoration: none;
+}
+
+nav ul{
+    list-style: none;
+}
+
+/* Grade de botões */
+
+.grid-servicos {
+    display: grid;
     justify-content: center;
+    grid-template-columns: repeat(3, 18vh);
+    /* 3 colunas */
+    gap: 10px;
+    max-width: 500px;
+    margin: auto;
+}
+
+.botao-profissao {
+    background-color: var(--Roxo-Cinzento);
+    border: none;
+    border-radius: 5px;
+    height: 130px;
+    width: 130px;
     text-decoration: none;
     color: black;
     font-size: 12px;
     font-weight: bold;
-    box-shadow: 2px 2px 4px rgba(0,0,0,0.2);
+    box-shadow: 3px 4px 3px var(--Trasnparencia);
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
+.botao-profissao:hover {
+    border: 2px dashed var(--Branco);
+    transition: all 0.2s;
+}
+
+/* barra de pesquisa */
+.busca {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.busca input {
+    width: 80%;
+    max-width: 300px;
+    padding: 10px;
+    border-radius: 20px;
+    border: none;
+    background-color: var(--Azul-marinho-Acinzentado);
+    color: var(--Branco);
+}
+
+.busca input::placeholder {
+    color: var(--Branco);
+}
+
+.busca input:hover{
+    background-color: var(--Azul-marinho-escuro);
+    transition: all 0.2s;
+}
+
+.busca input:focus {
+    background-color: var(--Azul-marinho-escuro);
+}
