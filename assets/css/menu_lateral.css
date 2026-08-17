@@ -1,0 +1,42 @@
+/* links do menu */
+.menu-links {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.menu-links a {
+    color: black;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* icone do hamburguer */
+.menu-hamburguer {
+    font-size: 24px;
+    color: black;
+    cursor: pointer;
+}
+
+
+/* menu lateral escondido */
+.menu-lateral {
+    position: fixed;
+    top: 50px;
+    left: -100%; 
+    width: 300px;
+    height: 80%;
+    background-color: var(--Roxo);
+    box-shadow: 3px 3px 4px rgba(0,0,0,0.3);
+    transition: 0.3s;
+    padding: 20px;
+    z-index: 999;
+}
+
+/* magica pra abrir o menu lateral */
+.menu-lateral:has(+ #check-menu:checked){
+    left: 0;
+}

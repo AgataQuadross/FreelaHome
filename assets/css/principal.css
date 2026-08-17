@@ -15,6 +15,12 @@ header {
     flex-direction: row;
     justify-content: space-between;
     padding-inline: 15px;
+    padding-top: 5px;
+}
+
+header img {
+    height: 40px;
+    width: 40px;
 }
 
 nav a{
@@ -67,15 +73,15 @@ img {
 /* barra de pesquisa */
 .busca {
     text-align: center;
-    margin: 50px 0 50px;
+    margin: 20px 0 50px;
 }
 
 .busca input {
-    width: 80%;
-    max-width: 300px;
+    width: 400px;
     padding: 10px;
     border-radius: 20px;
     border: none;
+    outline: none;
     background-color: var(--Azul-marinho-Acinzentado);
     color: var(--Branco);
 }

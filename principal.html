@@ -7,26 +7,35 @@
     <title>Dashboard</title>
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet" href="assets/css/principal.css">
+    <link rel="stylesheet" href="assets/css/menu_lateral.css">
 </head>
 
 <body>
     <header>
-    <nav>
-        <ul>
-            <li><a href="">Conta</a></li>
-            <li><a href="">Configurações</a></li>
-            <li><a href="">Historico</a></li>
-            <li><a href="index.html">Sair</a></li>
-        </ul>
-    </nav>
-
-        <img src="assets/images/logo.png" alt="FreelaHome" width="50">
+        <div class="icon-menu">
+            <label for="check-menu" class="menu-hamburguer">&#9776;</label>
+            <aside class="menu-lateral">
+                <nav class="menu-desktop">
+                    <ul class="menu-links">
+                        <li><a href="">Conta</a></li>
+                        <li><a href="">Configurações</a></li>
+                        <li><a href="">Historico</a></li>
+                        <li><a href="index.html">Sair</a></li>
+                    </ul>
+                </nav>
+            </aside>
+            <input type="checkbox" id="check-menu" style="display: none;">
+        </div>
+        <div class="logo">
+        <h1>FreelaHome</h1>
+        <img src="assets/img/logo_freelahome.png" alt="FreelaHome" width="50">
+        </div>
     </header>
 
 
     <main>
         <form action="GET" class="busca">
-            <input  id="busca" type="text" placeholder="&#128269; pesquise aqui">
+            <input id="busca" type="text" placeholder="&#128269; pesquise aqui">
         </form>
 
         <section class="grid-servicos">
