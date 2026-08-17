@@ -25,15 +25,16 @@ nav ul{
     list-style: none;
 }
 
+
 /* Grade de botões */
 
 .grid-servicos {
     display: grid;
     justify-content: center;
-    grid-template-columns: repeat(3, 18vh);
+    grid-template-columns: repeat(3, 15vh);
     /* 3 colunas */
     gap: 10px;
-    max-width: 500px;
+    max-width: 100px;
     margin: auto;
 }
 
@@ -58,10 +59,15 @@ nav ul{
     transition: all 0.2s;
 }
 
+img {
+    height: 90px;
+}
+
+
 /* barra de pesquisa */
 .busca {
     text-align: center;
-    margin: 20px 0;
+    margin: 50px 0 50px;
 }
 
 .busca input {
